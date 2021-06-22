@@ -5,7 +5,7 @@
             <div class="modal-content">
                 <h2>{{mission.title}}</h2>
                 <p>{{mission.content}}</p>
-                <router-link class="mission--button" :to=" '/Missions/' + mission._id">Commencer</router-link>
+                <router-link class="mission--button" :to=" '/Mission/' + mission._id">Commencer</router-link>
             </div>
             <a class="close-button" @click="removeModal(mission._id)">X</a>
         </div>
