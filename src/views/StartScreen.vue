@@ -10,7 +10,7 @@
     </div>
 </template>
 <script>
-import StartScreenIllustration from '../components/gameUi/StartScreenIllustration'
+import StartScreenIllustration from '../components/illustrations/StartScreenIllustration'
 export default({
     
     setup() {

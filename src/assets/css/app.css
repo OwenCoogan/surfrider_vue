@@ -1,5 +1,4 @@
 @import url(//db.onlinewebfonts.com/c/42420bce970ab67cc1884ce7eece1df5?family=Supernett+cn);
-
 *{
     font-family: "Supernett cn";
 }
@@ -32,7 +31,9 @@
 .answer-holder--flex{
     display:flex;
 }
-
+.svg-holder{
+    height: 100vh;
+}
 .answer--card{
     width:25%;
     margin:auto;
@@ -51,6 +52,12 @@
 .mission-holder{
     width: 80%;
     margin: auto;
+}
+.absolute--content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50% )
 }
 
 .button--delete, .button-add--question{

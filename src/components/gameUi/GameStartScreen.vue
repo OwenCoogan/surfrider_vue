@@ -1,12 +1,15 @@
 <template>
     <div class="gameStartScreen">
-        <h1>{{title}}</h1>
-        <p>{{content}}</p>
+        <div class="absolute--content">
+            <h2 class="game--title">Coastline In Danger</h2>
+            <h2>{{title}}</h2>
+            <p>{{content}}</p>
+        </div>
         <StartScreenIllustration/>
     </div>
 </template>
 <script>
-import StartScreenIllustration from './StartScreenIllustration.vue'
+import StartScreenIllustration from '../illustrations/StartScreenIllustration.vue'
 export default({
     props: ['title','content','startScreen'],
     setup() {
