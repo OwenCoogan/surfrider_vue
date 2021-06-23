@@ -2,8 +2,20 @@
 *{
     font-family: "Supernett cn";
 }
+#app{
+    height: 100vh;
+    overflow: hidden;
+}
 .mission--cursor:hover path{
     fill:white;
+}
+.screen-wrapper{
+    position:relative;
+}
+.phone{
+    position: absolute;
+    right: 20%;
+    bottom: 10%;
 }
 .mission-modal{
     position: absolute;
@@ -114,4 +126,127 @@
     background-color:white;
     border:1px solid grey;
     border-radius:50px;
+}
+.backdrop{
+    position:relative;
+    max-width:1064px;
+    margin:auto;
+}
+.character-holder{
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+.questions-list{
+    position:absolute;
+    top: 25%;
+    right: 15%;
+    width:30%;
+
+}
+.dialog-bubble{
+    background: #E3E3E5;
+    border-radius: 20px;
+    margin-bottom:20px;
+    padding: 10px 13px;
+}
+.dialog-bubble--blue{
+    border-radius: 20px;
+    background:#09456E;
+    color:#E3E3E5;
+    margin-bottom:20px;
+    width: 50%;
+    margin-left: 42%;
+    padding: 10px 13px;
+}
+.answer-list{
+    width:30%;
+    margin-left:70%;
+}
+.answer-list button{
+    display:block;
+    width:100%;
+    margin-bottom:16px;
+    background: #0073C0;
+    border-radius: 20px;
+    padding: 10px 13px;
+    border:1px solid white;
+    color:white;    
+}
+.answer-list-promotion button{
+    display:inline-block;
+    margin-bottom:16px;
+    background: #0073C0;
+    border-radius: 20px;
+    padding: 10px 13px;
+    border:1px solid white;
+    color:white;    
+}
+
+.slide{
+    display:none;
+}
+
+.slideActive{
+    display:block;
+}
+
+.phone--button:hover{
+    fill:#97C850;
+}
+.large--phone svg{
+    height: 400px;
+    right:20px;
+}
+.svg-character{
+    position:absolute;
+    bottom:0;
+    left:20%;
+}
+
+
+.final-game-div{
+    background-image: url('../FinalGameIllu.png');
+    height:300px;
+    width:500px;
+    background-size: cover;
+    position:absolute;
+    top:50%;
+    right:10%;
+    border-radius:26px;
+    border:1px solid white;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper div{
+    background-color:grey;
+    opacity:0.7;
+    position:relative;
+    border-radius:25px;
+}
+
+.wrapper div:hover{
+    background-color:grey;
+    opacity:0.9;
+}
+.score-card{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate( -50% , -50% );
+    padding:26px;
+    border-radius:15px;
+    background-color:white;
+    border:1px solid black;
+}
+
+.player-list{
+    overflow:scroll;
+    height:100vh;
 }

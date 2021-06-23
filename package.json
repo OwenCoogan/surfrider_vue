@@ -14,7 +14,8 @@
     "vue-agile": "^1.1.3",
     "vue-carousel": "^0.18.0",
     "vue-router": "^3.5.1",
-    "vue-tiny-slider": "^0.1.39"
+    "vue-tiny-slider": "^0.1.39",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
