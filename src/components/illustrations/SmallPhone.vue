@@ -339,7 +339,6 @@ export default({
     methods:{
         toggleLargePhone(){
             this.phoneActive = !this.phoneActive
-            console.log(this.phoneActive)
         },
         nextSlide(){
             this.$store.commit('next')

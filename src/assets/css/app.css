@@ -1,6 +1,14 @@
-@import url(//db.onlinewebfonts.com/c/42420bce970ab67cc1884ce7eece1df5?family=Supernett+cn);
+@import url("//db.onlinewebfonts.com/c/42420bce970ab67cc1884ce7eece1df5?family=Supernett+cn");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 *{
     font-family: "Supernett cn";
+}
+p{
+    font-size:22px;
+    font-family: 'Quicksand', sans-serif;
+}
+a,button{
+    font-family: 'Quicksand', sans-serif;
 }
 #app{
     height: 100vh;
@@ -15,7 +23,7 @@
 .phone{
     position: absolute;
     right: 20%;
-    bottom: 10%;
+    bottom: 7.5%;
 }
 .mission-modal{
     position: absolute;
@@ -24,7 +32,7 @@
     background: #FFFFFF;
     opacity: 1;
     border-radius: 5px;
-    padding: 50px;
+    padding: 20px;
 }
 .mission-modal h2{
     font-style: normal;
@@ -32,16 +40,19 @@
     font-size: 48px;
 }
 .mission-modal p{
-    font-size: 18px;
+    font-size: 16px;
 }
 .gameStartScreen{
     position:relative;
 }
 .mission-modal .mission--button{
     background: #0073C0;
-    color:white;
+    color: white;
     border-radius: 50px;
     padding: 8px 45px;
+    display: block;
+    width: 140px;
+    margin: auto;
 }
 .answer-holder--flex{
     display:flex;
@@ -70,7 +81,7 @@
 }
 .absolute--content{
     position:absolute;
-    top:50%;
+    top:47.5%;
     left:50%;
     transform:translate(-50% , -50% )
 }
@@ -103,7 +114,7 @@
     font-weight:400;
 }
 .country--mission:hover{
-    fill:red;
+    fill:#0073C0;
 }
 
 .MyModal{
@@ -111,11 +122,19 @@
 }
 .MyModalActive{
     display:block !important;
+    position: absolute;
+    height: 420px;
+    left: 54.65%;
+    right: 12.85%;
+    top: 31.78%;
+    bottom: 16.89%;
+    background-color:rgba(255, 255, 255, 0.6);
 }
-.MyModalActive{
+.MyModalActiveButton{
+    display:block;
     position:absolute;
-    bottom:50px;
-    right:50px;
+    bottom:10%;
+    right:10%;
 }
 .close-button{
     height: 20px;
@@ -140,9 +159,11 @@
 .questions-list{
     position:absolute;
     top: 25%;
-    right: 15%;
+    right: 22.5%;
     width:30%;
-
+    padding:10px;
+    border-radius: 25px;
+    background-color:rgba(255, 255, 255, 0.6);
 }
 .dialog-bubble{
     background: #E3E3E5;
@@ -201,38 +222,34 @@
 .svg-character{
     position:absolute;
     bottom:0;
-    left:20%;
+    left:15%;
 }
-
-
 .final-game-div{
-    background-image: url('../FinalGameIllu.png');
-    height:300px;
-    width:500px;
-    background-size: cover;
-    position:absolute;
-    top:50%;
-    right:10%;
-    border-radius:26px;
-    border:1px solid white;
+    background-image: url(/img/FinalGameIllu.a36a0610.png);
+    height: 253px;
+    width: 606px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    border: 1px solid white;
 }
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(19, 1fr);
     grid-gap: 2px;
-    grid-auto-rows: minmax(100px, auto);
 }
 
 .wrapper div{
-    background-color:grey;
-    opacity:0.7;
+    border:1px solid grey;
     position:relative;
-    border-radius:25px;
+    border-radius:3px;
+    height: 28px;
+    width: 28px;
 }
 
 .wrapper div:hover{
-    background-color:grey;
+    background-color:#0073C0;
     opacity:0.9;
 }
 .score-card{
@@ -242,11 +259,123 @@
     transform:translate( -50% , -50% );
     padding:26px;
     border-radius:15px;
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.6);
     border:1px solid black;
+    width:60%;
 }
 
 .player-list{
-    overflow:scroll;
-    height:100vh;
+    overflow-y: scroll;
+    list-style: none;
+    height: 80%;
+    width: 95%;
+    margin: auto;
+    padding:0;
 }
+.player{
+    display:block;
+    width:100%;
+}
+.game--title{
+    font-weight: normal;
+    font-size: 76px;
+    margin: 0;
+    color:white;
+}
+.blue--large button{
+    background: #0073C0;
+    border-radius: 50px;
+    padding: 2px 22px;
+    font-size: 26px;
+    color: white;
+    border: 0;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.blue--large button , .absolute--content input{
+    max-width:180px;
+}
+.absolute--content input{
+    margin: 20px auto;
+}
+.name-input{
+    height: 32px;
+    padding: 0 35px;
+    position: relative;
+    display: block;
+    margin:auto;
+    width: 100%;
+    background: #fff;
+    border-radius: 31px;
+    font-size: 18px;
+    color: #8f8fa1;
+    line-height: 1.2;
+}
+.character--map-list{
+    background-image: url('../mission_images/maire.svg');
+    width: 174px;
+    height: 173px;
+    background-color:grey;
+    background-size: cover;
+    border-radius:200px;
+}
+.flex--missionList{
+    display:flex;
+}
+.character--map-text{
+    width: 60%;
+    padding: 0 10px;
+}
+.player-flex{
+    display: inline-flex;
+    margin: 10px auto;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid black;
+}
+.player-flex p {
+    width:45%;
+    margin:auto;
+}
+.absolute--content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:9999;
+    height:40vh;
+    width:60%;
+}
+.scoreboard{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    z-index: 9999;
+    height: 75vh;
+    width:60%;
+    background-color:rgba(255, 255, 255, 0.6);
+    transform:translate( -50% , -50% )
+}
+.hello{
+    border:none;
+    background-color:transparent;
+}
+.button--blue{
+    background: #0073C0;
+    border-radius: 50px;
+    padding: 2px 22px;
+    font-size: 22px;
+    color: white;
+    border: 0;
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-width:200px;
+}
+
+.last-game{
+    top: 15%;
+    right: 27.5%;
+    background-color:transparent;
+}
+

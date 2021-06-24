@@ -28,7 +28,6 @@ export default({
             const res = await axios.get('http://localhost:6590/v1/missions', {
             })
             this.missions = res.data.data
-            console.log(this.missions)
         },
         deleteMission(id){
             axios.delete('http://localhost:6590/v1/mission/delete/'+ id ,  {

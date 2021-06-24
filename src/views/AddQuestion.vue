@@ -94,7 +94,6 @@ export default({
             const answer1withScore= [this.answer1,this.score1]
             const answer2withScore= [this.answer2,this.score2]
             const answer3withScore= [this.answer3,this.score3]
-            console.log(answer1withScore,answer2withScore,answer3withScore)
             
             const url = 'http://localhost:6590/v1/mission/'+id+'/addQuestion'
             axios.post(url,{

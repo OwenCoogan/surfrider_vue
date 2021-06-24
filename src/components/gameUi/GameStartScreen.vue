@@ -1,11 +1,11 @@
 <template>
     <div class="gameStartScreen">
         <div class="absolute--content">
-            <h2 class="game--title">Coastline In Danger</h2>
+            <h2 class="game--title">Coastline Challenge</h2>
             <h2>{{title}}</h2>
             <p>{{content}}</p>
-            <input type="text" name="name" placeholder="Votre Prénom" v-on:change="event => logName(event)">
-            <NextSlideButton
+            <input type="text" name="name" class="name-input" placeholder="Votre Prénom" v-on:change="event => logName(event)">
+            <NextSlideButton class="blue--large"
             v-bind:text="'Commencer'"
             />
         </div>

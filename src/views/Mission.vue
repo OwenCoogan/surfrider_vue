@@ -100,7 +100,6 @@ export default({
     },
     mounted () {
         this.fetchData()
-        console.log(this.$store.state.missionSpecialistActive)
     }  
     
 })

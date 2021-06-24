@@ -1,17 +1,19 @@
 <template>
-<div class="questions-list" >
-    <div class="question1" v-if="this.questionActive === 1">
-        <div class="dialog-bubble">
-            Bonjour (prénom). Alors je t'écoute, où décides-tu de placer l’hôtel ? 
-        </div>
-        <div class="answer-list">
-            <button class="answer" score="1" @click="nextQuestion()">Oui, avec plaisir.</button>
+<div class="">
+    <div class="questions-list" v-if="this.questionActive === 1">
+        <div class="question1 ">
+            <div class="dialog-bubble">
+                Bonjour (prénom). Alors je t'écoute, où décides-tu de placer l’hôtel ? 
+            </div>
+            <div class="answer-list">
+                <button class="answer" score="1" @click="nextQuestion()">Oui, avec plaisir.</button>
+            </div>
         </div>
     </div>
-    <FinalGame v-if="this.questionActive === 2"/>
-    
+    <div class="questions-list last-game" v-if="this.questionActive === 2">
+        <FinalGame v-if="this.questionActive === 2"/>
+    </div>
 </div>
-    
 </template>
 <script>
 import FinalGame from '../FinalGame.vue'
