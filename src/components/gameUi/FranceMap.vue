@@ -10,7 +10,6 @@
                 </div>
                 <router-link class="mission--button" :to=" '/Mission/' + mission._id">Commencer</router-link>
             </div>
-            <a class="close-button" @click="removeModal(mission._id)">X</a>
         </div>
     </div>
 </template>

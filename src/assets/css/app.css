@@ -4,7 +4,7 @@
     font-family: "Supernett cn";
 }
 p{
-    font-size:22px;
+    font-size:18    px;
     font-family: 'Quicksand', sans-serif;
 }
 a,button{
@@ -114,7 +114,7 @@ a,button{
     font-weight:400;
 }
 .country--mission:hover{
-    fill:#0073C0;
+    fill:#989ea1;
 }
 
 .MyModal{
@@ -158,7 +158,7 @@ a,button{
 }
 .questions-list{
     position:absolute;
-    top: 25%;
+    top: 15%;
     right: 22.5%;
     width:30%;
     padding:10px;
@@ -166,7 +166,8 @@ a,button{
     background-color:rgba(255, 255, 255, 0.6);
 }
 .dialog-bubble{
-    background: #E3E3E5;
+    background: #003B63;
+    color:white;
     border-radius: 20px;
     margin-bottom:20px;
     padding: 10px 13px;
@@ -188,19 +189,39 @@ a,button{
     display:block;
     width:100%;
     margin-bottom:16px;
-    background: #0073C0;
+    background: white;
     border-radius: 20px;
     padding: 10px 13px;
-    border:1px solid white;
-    color:white;    
+    border:1px solid #003B63;
+    color:#003B63;    
+}
+.answer-list-promotion{
+    width:48%;
+    margin-left:52%;
+}
+.list-promotion-wide{
+    width:100%;
+    margin:auto;
 }
 .answer-list-promotion button{
     display:inline-block;
     margin-bottom:16px;
-    background: #0073C0;
+    width:100%;
+    background: white;
     border-radius: 20px;
     padding: 10px 13px;
-    border:1px solid white;
+    border:1px solid #003B63;
+    color:#003B63;    
+}
+
+.answer-list-promotion button:hover{
+    display:inline-block;
+    margin-bottom:16px;
+    width:100%;
+    background: #003B63;
+    border-radius: 20px;
+    padding: 10px 13px;
+    border:1px solid #003B63;
     color:white;    
 }
 
@@ -225,7 +246,7 @@ a,button{
     left:15%;
 }
 .final-game-div{
-    background-image: url(/img/FinalGameIllu.a36a0610.png);
+    background-image: url('../FinalGameIllu.png');
     height: 253px;
     width: 606px;
     background-size: contain;
@@ -249,7 +270,7 @@ a,button{
 }
 
 .wrapper div:hover{
-    background-color:#0073C0;
+    background-color:#003B63;
     opacity:0.9;
 }
 .score-card{

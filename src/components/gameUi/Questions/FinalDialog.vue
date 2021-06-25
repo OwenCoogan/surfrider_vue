@@ -6,7 +6,7 @@
                 Bonjour (prénom). Alors je t'écoute, où décides-tu de placer l’hôtel ? 
             </div>
             <div class="answer-list">
-                <button class="answer" score="1" @click="nextQuestion()">Oui, avec plaisir.</button>
+                <button class="answer" score="1" @click="nextQuestion()">Placer l'hôtel</button>
             </div>
         </div>
     </div>

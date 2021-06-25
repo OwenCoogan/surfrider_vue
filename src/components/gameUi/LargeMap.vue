@@ -7,7 +7,6 @@
             <div class="modal-content">
                 <router-link class="startscreen--button" :to=" '/Missions/' + country.countryId">{{country.name}}</router-link>
             </div>
-            <a class="close-button" @click="removeModal(country.countryId)">X</a>
         </div>
     </div>
 </template>

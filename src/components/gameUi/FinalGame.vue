@@ -45,7 +45,7 @@
                 <div class="four" score="4" @click="submitScore(1)"></div>
                 <div class="five" score="5" @click="submitScore(1)"></div>
                 <div class="six" score="6" @click="submitScore(1)"></div>
-                <div class="s" score="7" @click="submitScore(1)" style="background-color:red"></div>
+                <div class="s" score="7" @click="submitScore(1)"></div>
                 <div class="two" score="8" @click="submitScore(1)"></div>
                 <div class="three" score="9" @click="submitScore(1)"></div>
                 <div class="four" score="10" @click="submitScore(1)"></div>
@@ -69,7 +69,7 @@
                 <div class="four" score="4" @click="submitScore(1)"></div>
                 <div class="five" score="5" @click="submitScore(1)"></div>
                 <div class="six" score="6" @click="submitScore(1)"></div>
-                <div class="s" score="7" @click="submitScore(1)" style="background-color:red"></div>
+                <div class="s" score="7" @click="submitScore(1)"></div>
                 <div class="two" score="8" @click="submitScore(1)"></div>
                 <div class="three" score="9" @click="submitScore(1)"></div>
                 <div class="four" score="10" @click="submitScore(1)"></div>
@@ -96,7 +96,7 @@
                 <div class="two" score="8" @click="submitScore(1)"></div>
                 <div class="three" score="9" @click="submitScore(1)"></div>
                 <div class="four" score="10" @click="submitScore(1)"></div>
-                <div class="five" score="11" @click="submitScore(1)" style="background-color:red"></div>
+                <div class="five" score="11" @click="submitScore(1)"></div>
                 <div class="six" score="12" @click="submitScore(1)"></div>
 
 

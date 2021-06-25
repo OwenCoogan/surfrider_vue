@@ -26,10 +26,10 @@
         <div class="dialog-bubble">
             D’accord, je comprends, mais réfléchissez bien, cela favoriserait le développement de la zone, du tourisme en passant par les commerces. Avez-vous pensé à tous ces gens que cela aiderait ?
         </div>
-        <div class="answer-list-promotion">
-            <button class="answer" score="1" id="1" @click="checkAnswer(1,3)">Pour être honnête, j’avais oublié de prendre en compte cet aspect-là, vous avez raison, l’aspect économique et financier prime sur la préservation du littoral. Quant à cette préservation, des aménagements pourront être réalisés dans le futur.</button>
-            <button class="answer" score="0" id="2" @click="checkAnswer(2,3)">Je suis d’accord avec vous, ne pensez-vous pas que nous pourrions trouver une solution qui regroupe ces deux enjeux, à la fois l’aspect environnement et l’aspect économique ? Par exemple; en déplaçant légèrement l’hôtel sur la côte pour avoir une velle vue sur la mer et préserver le littoral ?</button>
-            <button class="answer" score="1" id="3" @click="checkAnswer(3,3)">Je ne suis pas d’accord. Je ne  sacrifierai jamais notre précieux littoral au profit de vos intérêts financiers.</button>
+        <div class="answer-list-promotion list-promotion-wide">
+            <button class="answer answer-wide" score="1" id="1" @click="checkAnswer(1,3)">Pour être honnête, j’avais oublié de prendre en compte cet aspect-là, vous avez raison, l’aspect économique et financier prime sur la préservation du littoral. Quant à cette préservation, des aménagements pourront être réalisés dans le futur.</button>
+            <button class="answer answer-wide" score="0" id="2" @click="checkAnswer(2,3)">Je suis d’accord avec vous, ne pensez-vous pas que nous pourrions trouver une solution qui regroupe ces deux enjeux, à la fois l’aspect environnement et l’aspect économique ? Par exemple; en déplaçant légèrement l’hôtel sur la côte pour avoir une velle vue sur la mer et préserver le littoral ?</button>
+            <button class="answer answer-wide" score="1" id="3" @click="checkAnswer(3,3)">Je ne suis pas d’accord. Je ne  sacrifierai jamais notre précieux littoral au profit de vos intérêts financiers.</button>
         </div>
     </div>
     <div class="question4" v-if="this.questionActive === 4 && this.givenAnswer === 1">
